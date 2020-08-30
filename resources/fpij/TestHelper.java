@@ -8,7 +8,7 @@
 ***/
 package fpij;
 
-import static org.junit.Assert.fail;
+import static com.sun.tools.internal.ws.wsdl.parser.Util.fail;
 
 public class TestHelper {
   public static <X extends Throwable> Throwable assertThrows(

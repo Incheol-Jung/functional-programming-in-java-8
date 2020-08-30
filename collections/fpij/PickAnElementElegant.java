@@ -28,18 +28,14 @@ public class PickAnElementElegant {
   }
 
   public static void main(final String[] args) {
-System.out.println("//" + "START:NAME_OUTPUT");
     pickName(friends, "N");
     pickName(friends, "Z");
-System.out.println("//" + "END:NAME_OUTPUT");
 
     final Optional<String> foundName = 
       friends.stream()
              .filter(name ->name.startsWith("N"))
              .findFirst();
 
-System.out.println("//" + "START:CLOSURE_OUTPUT");
     foundName.ifPresent(name -> System.out.println("Hello " + name));
-System.out.println("//" + "END:CLOSURE_OUTPUT");
   }
 }
